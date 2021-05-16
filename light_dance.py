@@ -35,7 +35,7 @@ def clear_cmd():
 
 def get_speed():
     while True:
-        user_input = input('speed?: [1-1000] ')
+        user_input = input('speed: [1-1000] ')
 
         if user_input.isdigit():
             user_input = int(user_input)
