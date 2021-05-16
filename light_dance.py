@@ -18,6 +18,20 @@ FRONT_COLOR_COD = list(hexdigits)
 BACK_COLOR_COD = list(hexdigits)
 BACK_COLOR_COD.reverse()
 
+speed_sec = {
+    1: 10,
+    2: 7.5,
+    3: 5,
+    4: 2.5,
+    5: 1,
+    6: .5,
+    7: .1,
+    8: .05,
+    9: .01,
+    10: .005,
+
+}
+
 
 def color_code():
     global color_code_index
@@ -50,22 +64,18 @@ def count_change_color_after_print():
     return 1
 
 
-def get_speed():
+def get_sleep_time():
     while True:
-        user_input = input('speed: [1-1000] ')
+        print(' '*5, end='')
+        user_input = input('change color speed [1-10] >> ')
 
         if user_input.isdigit():
             user_input = int(user_input)
 
-            if user_input in range(1, 1001):
-                return 1001 - user_input
+            if user_input in range(1, 11):
+                return speed_sec[user_input]
 
         print('Invalid input')
-
-
-def get_sleep_time():
-    speed = get_speed()
-    return speed / 1000
 
 
 def main_while(sleep_time):
