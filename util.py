@@ -3,6 +3,7 @@
 founcions 
 '''
 
+
 from os import system
 from sys import platform
 from string import hexdigits
@@ -27,6 +28,10 @@ speed_to_second = {
     10: .005,
 
 }
+
+
+def change_screen_size_cmd():
+    system('mode con: cols=140 lines=47')
 
 
 def color_code():
@@ -71,7 +76,7 @@ def get_sleep_time():
     '''
     while True:
         print(' '*5, end='')
-        user_input = input('change color speed [1-10] >> ')
+        user_input = input('Color change speed [1-10] >> ')
 
         if user_input.isdigit():
             user_input = int(user_input)
