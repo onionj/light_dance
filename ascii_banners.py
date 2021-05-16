@@ -2,6 +2,15 @@
 
 frame_1 = """-- onionj --  
 
+██╗ 
+██║ 
+██║ 
+██║     
+███████╗
+╚══════╝
+"""
+frame_2 = """-- onionj --  
+
 ██╗     ██╗
 ██║     ██║
 ██║     ██║
@@ -10,7 +19,17 @@ frame_1 = """-- onionj --
 ╚══════╝╚═╝
 """
 
-frame_2 = """-- onionj --    
+frame_3 = """-- onionj --    
+
+██╗     ██╗ ██████╗ 
+██║     ██║██╔════╝ 
+██║     ██║██║  ███╗
+██║     ██║██║   ██║
+███████╗██║╚██████╔╝
+╚══════╝╚═╝ ╚═════╝                                                                                         
+    """
+
+frame_4 = """-- onionj --    
 
 ██╗     ██╗ ██████╗ ██╗  ██╗
 ██║     ██║██╔════╝ ██║  ██║
@@ -20,7 +39,18 @@ frame_2 = """-- onionj --
 ╚══════╝╚═╝ ╚═════╝ ╚═╝  ╚═╝                                                                                          
     """
 
-frame_3 = """-- onionj --  
+frame_5 = """-- onionj --  
+
+██╗     ██╗ ██████╗ ██╗  ██╗████████╗ 
+██║     ██║██╔════╝ ██║  ██║╚══██╔══╝
+██║     ██║██║  ███╗███████║   ██║ 
+██║     ██║██║   ██║██╔══██║   ██║ 
+███████╗██║╚██████╔╝██║  ██║   ██║ 
+╚══════╝╚═╝ ╚═════╝ ╚═╝  ╚═╝   ╚═╝                                                                                            
+"""
+
+
+frame_7 = """-- onionj --  
 
 ██╗     ██╗ ██████╗ ██╗  ██╗████████╗    ██████╗ 
 ██║     ██║██╔════╝ ██║  ██║╚══██╔══╝    ██╔══██╗
@@ -30,8 +60,17 @@ frame_3 = """-- onionj --
 ╚══════╝╚═╝ ╚═════╝ ╚═╝  ╚═╝   ╚═╝       ╚═════╝                                                                                           
 """
 
+frame_8 = """-- onionj -- 
 
-frame_4 = """-- onionj -- 
+██╗     ██╗ ██████╗ ██╗  ██╗████████╗    ██████╗  █████╗ 
+██║     ██║██╔════╝ ██║  ██║╚══██╔══╝    ██╔══██╗██╔══██╗
+██║     ██║██║  ███╗███████║   ██║       ██║  ██║███████║
+██║     ██║██║   ██║██╔══██║   ██║       ██║  ██║██╔══██║
+███████╗██║╚██████╔╝██║  ██║   ██║       ██████╔╝██║  ██║
+╚══════╝╚═╝ ╚═════╝ ╚═╝  ╚═╝   ╚═╝       ╚═════╝ ╚═╝  ╚═╝
+"""
+
+frame_9 = """-- onionj -- 
 
 ██╗     ██╗ ██████╗ ██╗  ██╗████████╗    ██████╗  █████╗ ███╗   ██╗
 ██║     ██║██╔════╝ ██║  ██║╚══██╔══╝    ██╔══██╗██╔══██╗████╗  ██║
@@ -42,7 +81,17 @@ frame_4 = """-- onionj --
 """
 
 
-frame_5 = """-- onionj -- 
+frame_10 = """-- onionj -- 
+
+██╗     ██╗ ██████╗ ██╗  ██╗████████╗    ██████╗  █████╗ ███╗   ██╗ ██████╗
+██║     ██║██╔════╝ ██║  ██║╚══██╔══╝    ██╔══██╗██╔══██╗████╗  ██║██╔════╝
+██║     ██║██║  ███╗███████║   ██║       ██║  ██║███████║██╔██╗ ██║██║       
+██║     ██║██║   ██║██╔══██║   ██║       ██║  ██║██╔══██║██║╚██╗██║██║       
+███████╗██║╚██████╔╝██║  ██║   ██║       ██████╔╝██║  ██║██║ ╚████║╚██████╗
+╚══════╝╚═╝ ╚═════╝ ╚═╝  ╚═╝   ╚═╝       ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝           
+"""
+
+frame_11 = """-- onionj -- 
 
 ██╗     ██╗ ██████╗ ██╗  ██╗████████╗    ██████╗  █████╗ ███╗   ██╗ ██████╗███████╗
 ██║     ██║██╔════╝ ██║  ██║╚══██╔══╝    ██╔══██╗██╔══██╗████╗  ██║██╔════╝██╔════╝
@@ -53,23 +102,84 @@ frame_5 = """-- onionj --
 """
 
 
-ascii_banner = {
-    1: frame_1,
-    2: frame_2,
-    3: frame_3,
-    4: frame_4,
-    5: frame_5
+frame_12 = """-- onionj -- 
+
+                                         ██████╗  █████╗ ███╗   ██╗ ██████╗███████╗
+                                         ██╔══██╗██╔══██╗████╗  ██║██╔════╝██╔════╝
+                                         ██║  ██║███████║██╔██╗ ██║██║     █████╗  
+                                         ██║  ██║██╔══██║██║╚██╗██║██║     ██╔══╝  
+                                         ██████╔╝██║  ██║██║ ╚████║╚██████╗███████╗
+                                         ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝╚══════╝           
+"""
+
+
+ascii_banner_mood_1 = {
+    1: frame_1,  # L
+    2: frame_2,  # LI
+    3: frame_3,  # LIG
+    4: frame_4,  # LIGH
+    5: frame_5,  # LIGHT
+    6: frame_5,  # 6 == 5
+    7: frame_7,  # LIGHT D
+    8: frame_8,  # LIGHT DA
+    9: frame_9,  # LIGHT DAN
+    10: frame_10,  # LIGHT DANC
+    11: frame_11  # LIGHT DANCE
 }
 
+ascii_banner_mood_2 = {
+    1: frame_5,  # LIGHT
+    2: frame_12  # DANCE
+}
 
-frame = 5
+# start frame and handle choice fram
+frame_banner_mood_1 = 11
+
+
+def banner_mood_1():
+    global frame_banner_mood_1
+    print('\n'*5, ascii_banner_mood_1[frame_banner_mood_1])
+    if frame_banner_mood_1 == 11:
+        frame_banner_mood_1 = 1
+        return
+    frame_banner_mood_1 += 1
+
+
+# start frame and handle choice fram
+frame_banner_mood_2 = 1
+
+
+def banner_mood_2():
+    '''
+    return light dance or light or     dance
+    '''
+    global frame_banner_mood_2
+    print('\n'*5, ascii_banner_mood_2[frame_banner_mood_2])
+    if frame_banner_mood_2 == 2:
+        frame_banner_mood_2 = 1
+        return
+    frame_banner_mood_2 += 1
+
+
+mood = 1
+mood_count = 0
 
 
 def banner():
     '''print random ascii banner'''
-    global frame
-    print('\n'*5, ascii_banner[frame])
-    if frame == 5:
-        frame = 1
-    else:
-        frame += 1
+
+    global mood
+    global mood_count
+
+    if mood_count == 12:
+        mood = 2
+    elif mood_count >= 33:
+        mood = 1
+        mood_count = 1
+
+    if mood == 1:
+        banner_mood_1()
+    elif mood == 2:
+        banner_mood_2()
+
+    mood_count += 1
