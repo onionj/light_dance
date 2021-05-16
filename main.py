@@ -35,6 +35,7 @@ def main():
     get config and start while
     '''
     try:
+        change_screen_size_cmd()
         clear_cmd()
         banner()
 
