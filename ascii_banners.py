@@ -1,5 +1,7 @@
 
 
+# This function controls the animation of words
+
 frame_1 = """                          
 
 
@@ -168,7 +170,7 @@ frame_12 = """
 """
 
 
-ascii_banner_mood_1 = {
+ascii_banner_mode_1 = {
     1: frame_1,  # L
     2: frame_2,  # LI
     3: frame_3,  # LIG
@@ -182,59 +184,62 @@ ascii_banner_mood_1 = {
     11: frame_11  # LIGHT DANCE
 }
 
-ascii_banner_mood_2 = {
+ascii_banner_mode_2 = {
     1: frame_5,  # LIGHT
     2: frame_12  # DANCE
 }
 
-# start frame and handle choice fram
-frame_banner_mood_1 = 11
+
+# start frame and handle choice frame
+frame_banner_mode_1 = 11
 
 
-def banner_mood_1():
-    global frame_banner_mood_1
-    print('\n'*5, ascii_banner_mood_1[frame_banner_mood_1])
-    if frame_banner_mood_1 == 11:
-        frame_banner_mood_1 = 1
+def banner_mode_1():
+    '''Mode 1: Type the banner letters one after the other l >li >lig >ligh >...'''
+
+    global frame_banner_mode_1
+    print('\n'*5, ascii_banner_mode_1[frame_banner_mode_1])
+    if frame_banner_mode_1 == 11:
+        frame_banner_mode_1 = 1
         return
-    frame_banner_mood_1 += 1
+    frame_banner_mode_1 += 1
 
 
-# start frame and handle choice fram
-frame_banner_mood_2 = 1
+# start frame and handle choice frame
+frame_banner_mode_2 = 1
 
 
-def banner_mood_2():
+def banner_mode_2():
     '''
-    return light dance or light or     dance
+    Mode 2: Type a word : [light     ] or [      dance]
     '''
-    global frame_banner_mood_2
-    print('\n'*5, ascii_banner_mood_2[frame_banner_mood_2])
-    if frame_banner_mood_2 == 2:
-        frame_banner_mood_2 = 1
+    global frame_banner_mode_2
+    print('\n'*5, ascii_banner_mode_2[frame_banner_mode_2])
+    if frame_banner_mode_2 == 2:
+        frame_banner_mode_2 = 1
         return
-    frame_banner_mood_2 += 1
+    frame_banner_mode_2 += 1
 
 
-mood = 1
-mood_count = 0
+mode = 1
+mode_count = 0
 
 
 def banner():
     '''print random ascii banner'''
 
-    global mood
-    global mood_count
+    global mode
+    global mode_count
 
-    if mood_count == 12:
-        mood = 2
-    elif mood_count >= 33:
-        mood = 1
-        mood_count = 1
+    if mode_count == 12:
+        mode = 2
+    elif mode_count >= 33:
+        mode = 1
+        mode_count = 1
 
-    if mood == 1:
-        banner_mood_1()
-    elif mood == 2:
-        banner_mood_2()
+    if mode == 1:
+        banner_mode_1()
+    elif mode == 2:
+        banner_mode_2()
 
-    mood_count += 1
+    mode_count += 1
