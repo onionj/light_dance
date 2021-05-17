@@ -30,8 +30,8 @@ speed_to_second = {
 }
 
 
-def change_screen_size_cmd():
-    system('mode con: cols=140 lines=47')
+def change_screen_size_cmd(cols=140, lines=47):
+    system(f'mode con: cols={cols} lines={lines}')
 
 
 def color_code():
