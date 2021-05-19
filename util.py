@@ -53,7 +53,9 @@ def clear_cmd():
 
     if platform == 'win32':
         system('cls')
+        print('\n\n\n\n')
         return
+    print('\n\n\n\n')
     system('clear')
 
 
@@ -71,7 +73,7 @@ def get_user_text():
     while True:
         print(' '*5, end='')
         user_text = input('youre  text for animate: ')
-        user_text = user_text.lstrip()
+        # user_text = user_text.lstrip()
 
         if user_text in ['']:
             print('invalid input! ,please enter a text')
