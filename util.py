@@ -61,13 +61,22 @@ def count_change_color_after_print():
     '''
     Change the page color several times after changing the text
     '''
-    from ascii_banners import mode
+    return randint(1, 3)
 
-    # Mode 1: Type the banner letters one after the other l>li>lig>...
-    # Mode 2: Type a word : light dance
-    if mode == 1:
-        return randint(1, 3)
-    return 1
+
+def get_user_text():
+    '''
+    Get text as user
+    '''
+    while True:
+        print(' '*5, end='')
+        user_text = input('youre  text for animate: ')
+        user_text = user_text.lstrip()
+
+        if user_text in ['']:
+            print('invalid input! ,please enter a text')
+            continue
+        return user_text
 
 
 def get_sleep_time():
