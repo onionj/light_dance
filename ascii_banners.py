@@ -1,245 +1,40 @@
-
+import pyfiglet
+from random import choice
 
 # This function controls the animation of words
 
-frame_1 = """                          
+choices_font = 'xbrite'
+flag = 0
 
 
+def random_font():
+    return choice(pyfiglet.FigletFont.getFonts())
 
 
-██╗ 
-██║ 
-██║ 
-██║     
-███████╗
-╚══════╝
-                                                                            
-        Press F11 to full screen                                               -- onionj --  
-"""
-frame_2 = """                          
+def create_custom_func_figlet():
+    return pyfiglet.Figlet(font=choices_font)
 
 
+def print_ascii_banner(text):
+    print(create_custom_func_figlet().renderText(text))
 
 
-██╗     ██╗
-██║     ██║
-██║     ██║
-██║     ██║
-███████╗██║
-╚══════╝╚═╝
-                                                                            
-        Press F11 to full screen                                               -- onionj --  
-"""
+def animate_ascii(text):
+    global flag
+    global choices_font
 
-frame_3 = """                          
+    text_len = len(text)
 
+    if flag == 0:
+        choices_font = random_font()
 
+    print_ascii_banner(text[0:flag+1])
 
-
-██╗     ██╗ ██████╗ 
-██║     ██║██╔════╝ 
-██║     ██║██║  ███╗
-██║     ██║██║   ██║
-███████╗██║╚██████╔╝
-╚══════╝╚═╝ ╚═════╝                                        
-                                                                            
-        Press F11 to full screen                                               -- onionj --    
-    """
-
-frame_4 = """                          
-
-
-
-
-██╗     ██╗ ██████╗ ██╗  ██╗
-██║     ██║██╔════╝ ██║  ██║
-██║     ██║██║  ███╗███████║
-██║     ██║██║   ██║██╔══██║
-███████╗██║╚██████╔╝██║  ██║
-╚══════╝╚═╝ ╚═════╝ ╚═╝  ╚═╝                               
-                                                                            
-        Press F11 to full screen                                               -- onionj --    
-    """
-
-frame_5 = """                          
-
-
-
-
-██╗     ██╗ ██████╗ ██╗  ██╗████████╗ 
-██║     ██║██╔════╝ ██║  ██║╚══██╔══╝
-██║     ██║██║  ███╗███████║   ██║ 
-██║     ██║██║   ██║██╔══██║   ██║ 
-███████╗██║╚██████╔╝██║  ██║   ██║ 
-╚══════╝╚═╝ ╚═════╝ ╚═╝  ╚═╝   ╚═╝ 
-                                                                            
-        Press F11 to full screen                                               -- onionj --  
-"""
-
-
-frame_7 = """                          
-
-
-
-
-██╗     ██╗ ██████╗ ██╗  ██╗████████╗    ██████╗ 
-██║     ██║██╔════╝ ██║  ██║╚══██╔══╝    ██╔══██╗
-██║     ██║██║  ███╗███████║   ██║       ██║  ██║
-██║     ██║██║   ██║██╔══██║   ██║       ██║  ██║
-███████╗██║╚██████╔╝██║  ██║   ██║       ██████╔╝
-╚══════╝╚═╝ ╚═════╝ ╚═╝  ╚═╝   ╚═╝       ╚═════╝ 
-                                                                            
-        Press F11 to full screen                                               -- onionj --  
-"""
-
-frame_8 = """                          
-
-
-
-
-██╗     ██╗ ██████╗ ██╗  ██╗████████╗    ██████╗  █████╗ 
-██║     ██║██╔════╝ ██║  ██║╚══██╔══╝    ██╔══██╗██╔══██╗
-██║     ██║██║  ███╗███████║   ██║       ██║  ██║███████║
-██║     ██║██║   ██║██╔══██║   ██║       ██║  ██║██╔══██║
-███████╗██║╚██████╔╝██║  ██║   ██║       ██████╔╝██║  ██║
-╚══════╝╚═╝ ╚═════╝ ╚═╝  ╚═╝   ╚═╝       ╚═════╝ ╚═╝  ╚═╝
-                                                                            
-        Press F11 to full screen                                               -- onionj -- 
-"""
-
-frame_9 = """                          
-
-
-
-
-██╗     ██╗ ██████╗ ██╗  ██╗████████╗    ██████╗  █████╗ ███╗   ██╗
-██║     ██║██╔════╝ ██║  ██║╚══██╔══╝    ██╔══██╗██╔══██╗████╗  ██║
-██║     ██║██║  ███╗███████║   ██║       ██║  ██║███████║██╔██╗ ██║
-██║     ██║██║   ██║██╔══██║   ██║       ██║  ██║██╔══██║██║╚██╗██║
-███████╗██║╚██████╔╝██║  ██║   ██║       ██████╔╝██║  ██║██║ ╚████║
-╚══════╝╚═╝ ╚═════╝ ╚═╝  ╚═╝   ╚═╝       ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝
-                                                                            
-        Press F11 to full screen                                               -- onionj -- 
-"""
-
-
-frame_10 = """                          
-
-
-
-
-██╗     ██╗ ██████╗ ██╗  ██╗████████╗    ██████╗  █████╗ ███╗   ██╗ ██████╗
-██║     ██║██╔════╝ ██║  ██║╚══██╔══╝    ██╔══██╗██╔══██╗████╗  ██║██╔════╝
-██║     ██║██║  ███╗███████║   ██║       ██║  ██║███████║██╔██╗ ██║██║       
-██║     ██║██║   ██║██╔══██║   ██║       ██║  ██║██╔══██║██║╚██╗██║██║       
-███████╗██║╚██████╔╝██║  ██║   ██║       ██████╔╝██║  ██║██║ ╚████║╚██████╗
-╚══════╝╚═╝ ╚═════╝ ╚═╝  ╚═╝   ╚═╝       ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝           
-                                                                            
-        Press F11 to full screen                                               -- onionj -- 
-"""
-
-frame_11 = """                          
-
-
-
-
-██╗     ██╗ ██████╗ ██╗  ██╗████████╗    ██████╗  █████╗ ███╗   ██╗ ██████╗███████╗
-██║     ██║██╔════╝ ██║  ██║╚══██╔══╝    ██╔══██╗██╔══██╗████╗  ██║██╔════╝██╔════╝
-██║     ██║██║  ███╗███████║   ██║       ██║  ██║███████║██╔██╗ ██║██║     █████╗  
-██║     ██║██║   ██║██╔══██║   ██║       ██║  ██║██╔══██║██║╚██╗██║██║     ██╔══╝  
-███████╗██║╚██████╔╝██║  ██║   ██║       ██████╔╝██║  ██║██║ ╚████║╚██████╗███████╗
-╚══════╝╚═╝ ╚═════╝ ╚═╝  ╚═╝   ╚═╝       ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝╚══════╝           
-                                                                            
-        Press F11 to full screen                                               -- onionj -- 
-"""
-
-
-frame_12 = """                          
-
-
-
-
-                                         ██████╗  █████╗ ███╗   ██╗ ██████╗███████╗
-                                         ██╔══██╗██╔══██╗████╗  ██║██╔════╝██╔════╝
-                                         ██║  ██║███████║██╔██╗ ██║██║     █████╗  
-                                         ██║  ██║██╔══██║██║╚██╗██║██║     ██╔══╝  
-                                         ██████╔╝██║  ██║██║ ╚████║╚██████╗███████╗
-                                         ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝╚══════╝           
-                                                                            
-        Press F11 to full screen                                               -- onionj -- 
-"""
-
-
-ascii_banner_mode_1 = {
-    1: frame_1,  # L
-    2: frame_2,  # LI
-    3: frame_3,  # LIG
-    4: frame_4,  # LIGH
-    5: frame_5,  # LIGHT
-    6: frame_5,  # 6 == 5
-    7: frame_7,  # LIGHT D
-    8: frame_8,  # LIGHT DA
-    9: frame_9,  # LIGHT DAN
-    10: frame_10,  # LIGHT DANC
-    11: frame_11  # LIGHT DANCE
-}
-
-ascii_banner_mode_2 = {
-    1: frame_5,  # LIGHT
-    2: frame_12  # DANCE
-}
-
-
-# start frame and handle choice frame
-frame_banner_mode_1 = 11
-
-
-def banner_mode_1():
-    '''Mode 1: Type the banner letters one after the other l >li >lig >ligh >...'''
-
-    global frame_banner_mode_1
-    print('\n'*5, ascii_banner_mode_1[frame_banner_mode_1])
-    if frame_banner_mode_1 == 11:
-        frame_banner_mode_1 = 1
+    if text_len == flag:
+        flag = 0
         return
-    frame_banner_mode_1 += 1
-
-
-# start frame and handle choice frame
-frame_banner_mode_2 = 1
-
-
-def banner_mode_2():
-    '''
-    Mode 2: Type a word : [light     ] or [      dance]
-    '''
-    global frame_banner_mode_2
-    print('\n'*5, ascii_banner_mode_2[frame_banner_mode_2])
-    if frame_banner_mode_2 == 2:
-        frame_banner_mode_2 = 1
-        return
-    frame_banner_mode_2 += 1
-
-
-mode = 1
-mode_count = 0
+    flag += 1
 
 
 def banner():
-    '''print random ascii banner'''
-
-    global mode
-    global mode_count
-
-    if mode_count == 12:
-        mode = 2
-    elif mode_count >= 33:
-        mode = 1
-        mode_count = 1
-
-    if mode == 1:
-        banner_mode_1()
-    elif mode == 2:
-        banner_mode_2()
-
-    mode_count += 1
+    print_ascii_banner('LIGHT DANCE')
