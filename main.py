@@ -39,7 +39,10 @@ def main():
         clear_cmd()
         banner()
 
-        main_while(get_user_text(), get_sleep_time())
+        if get_animation_or_crater():  # if user choice is animation:
+            main_while(get_user_text(), get_sleep_time())
+            return
+        just_crate_ascii_banner(get_user_text())
 
     except KeyboardInterrupt:
         print('exit..')

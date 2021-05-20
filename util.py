@@ -45,7 +45,8 @@ def color_code():
     if color_code_index == 21:
         color_code_index = -1
     color_code_index += 1
-    return BACK_COLOR_COD[color_code_index] + FRONT_COLOR_COD[color_code_index]
+    # return BACK_COLOR_COD[color_code_index] + FRONT_COLOR_COD[color_code_index]
+    return FRONT_COLOR_COD[color_code_index] + '0'
 
 
 def clear_cmd():
@@ -63,7 +64,28 @@ def count_change_color_after_print():
     '''
     Change the page color several times after changing the text
     '''
-    return randint(1, 3)
+    return 1  # randint(1, 3)
+
+
+def get_animation_or_crater():
+    '''
+    Ask as user Do you want to create a banner or start an animation?\n
+    animation return True \n
+    banner return False\n
+    '''
+    while True:
+        print(' '*5, end='')
+
+        get_surce_mode = input(
+            'Do you want to create a banner or start an animation?: [animation: a, banner: b] ')
+        get_surce_mode = get_surce_mode.lower()
+
+        if get_surce_mode in ['a', 'b', 'animation', 'banner']:
+            if get_surce_mode in ['a', 'animation']:
+                return True
+            return False
+
+        print('invalid input, [A/B] ')
 
 
 def get_user_text():
@@ -72,7 +94,7 @@ def get_user_text():
     '''
     while True:
         print(' '*5, end='')
-        user_text = input('Your text for animation: ')
+        user_text = input('Your text for create assci banner: ')
         # user_text = user_text.lstrip()
 
         if user_text in ['']:
