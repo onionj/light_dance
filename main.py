@@ -12,24 +12,6 @@ from util import *
 from ascii_banners import *
 
 
-def main_while(user_text, sleep_time):
-    '''
-    print animation and change color 
-    '''
-    while True:
-        try:
-            clear_cmd()
-            animate_ascii(user_text)
-            for _ in range(count_change_color_after_print()):
-                # change CMD color:
-                system(f'color {color_code()}')
-                sleep(sleep_time)
-
-        except KeyboardInterrupt:
-            print('exit..')
-            return
-
-
 def main():
     '''
     get config and start while
