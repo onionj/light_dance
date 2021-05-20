@@ -72,11 +72,11 @@ def get_user_text():
     '''
     while True:
         print(' '*5, end='')
-        user_text = input('youre  text for animate: ')
+        user_text = input('Your text for animation: ')
         # user_text = user_text.lstrip()
 
         if user_text in ['']:
-            print('invalid input! ,please enter a text')
+            print('invalid input! ,please enter some text')
             continue
         return user_text
 
@@ -87,7 +87,7 @@ def get_sleep_time():
     '''
     while True:
         print(' '*5, end='')
-        user_input = input('Color change speed [1-10] >> ')
+        user_input = input('speed [1-10] >> ')
 
         if user_input.isdigit():
             user_input = int(user_input)
