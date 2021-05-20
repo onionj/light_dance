@@ -3,8 +3,6 @@ Simple light dance with ascii banner creator for windows console - onionj
 The main function of the program
 '''
 
-from time import sleep
-from os import system
 
 #  local import
 from util import *
