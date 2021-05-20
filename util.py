@@ -7,7 +7,10 @@ founcions
 from os import system
 from sys import platform
 from string import hexdigits
-from random import randint
+from time import sleep
+
+
+from ascii_banners import *
 
 
 color_code_index = -1
@@ -64,7 +67,7 @@ def count_change_color_after_print():
     '''
     Change the page color several times after changing the text
     '''
-    return 1  # randint(1, 3)
+    return 5  # randint(1, 3)
 
 
 def get_animation_or_crater():
@@ -100,7 +103,7 @@ def get_user_text():
         if user_text in ['']:
             print('invalid input! ,please enter some text')
             continue
-        return user_text
+        return user_text + '  '
 
 
 def get_sleep_time():
@@ -118,3 +121,21 @@ def get_sleep_time():
                 return speed_to_second[user_input]
 
         print('Invalid input')
+
+
+def main_while(user_text, sleep_time):
+    '''
+    print animation and change color 
+    '''
+    while True:
+        try:
+            clear_cmd()
+            animate_ascii(user_text)
+            for _ in range(count_change_color_after_print()):
+                # change CMD color:
+                system(f'color {color_code()}')
+                sleep(sleep_time)
+
+        except KeyboardInterrupt:
+            print('exit..')
+            return
