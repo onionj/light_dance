@@ -1,6 +1,5 @@
 '''
-Simple light dance for Windows console  -- onionj
-
+Simple light dance with ascii banner creator for windows console - onionj
 The main function of the program
 '''
 
