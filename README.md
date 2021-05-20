@@ -16,4 +16,4 @@ Press F11 to full screen
 
 ### Sample run at high speed :
 
-![example](https://user-images.githubusercontent.com/77416478/118489165-c4533500-b731-11eb-8163-4ecaf00454be.gif)
+![test-text](https://user-images.githubusercontent.com/77416478/118993822-13e86980-b99b-11eb-88e3-efb92528bacb.gif)
