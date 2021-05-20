@@ -1,6 +1,17 @@
 ## Simple python light dance for Windows console !!
 
-change console color and show sample animation :)
+change console color and show Custom assci text animation :)
+
+### usage:
+
+```
+pip install -r requirements.txt
+python main.py
+
+set youre text for crate youre ascii banners..
+set speed: 1-10
+
+```
 
 ### example gif:
 
