@@ -8,6 +8,7 @@ change console color and show Custom assci text animation :)
 pip install -r requirements.txt
 python main.py
 
+Choose whether you want to create a banner or an animation [a or b]
 set youre text for crate youre ascii banners..
 set speed: 1-10
 Press F11 to full screen
