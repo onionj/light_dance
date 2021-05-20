@@ -10,7 +10,7 @@ python main.py
 
 set youre text for crate youre ascii banners..
 set speed: 1-10
-
+Press F11 to full screen
 ```
 
 ### example gif:
