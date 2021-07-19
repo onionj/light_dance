@@ -1,4 +1,4 @@
-## Simple light dance with ascii banner creator and python for windows console
+## sample light dance with ascii banner creator and python for windows console
 
 ### change console color and show Custom assci text animation :)
 
